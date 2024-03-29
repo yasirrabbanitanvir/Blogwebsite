@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.537557c8.css",
-    "main.js": "./static/js/main.16dffcd7.js",
-    "static/js/453.ed6b48ab.chunk.js": "./static/js/453.ed6b48ab.chunk.js",
-    "index.html": "./index.html",
-    "static/media/arrow-right-circle-fill.svg": "./static/media/arrow-right-circle-fill.7c2248a40e1809ee0d9b.svg",
-    "static/media/arrow-left-circle-fill.svg": "./static/media/arrow-left-circle-fill.effcc43981807b245aae.svg",
-    "main.537557c8.css.map": "./static/css/main.537557c8.css.map",
-    "main.16dffcd7.js.map": "./static/js/main.16dffcd7.js.map",
-    "453.ed6b48ab.chunk.js.map": "./static/js/453.ed6b48ab.chunk.js.map"
+    "main.css": "/Blogwebsite/static/css/main.00f06ca3.css",
+    "main.js": "/Blogwebsite/static/js/main.f2c4d468.js",
+    "static/js/453.ed6b48ab.chunk.js": "/Blogwebsite/static/js/453.ed6b48ab.chunk.js",
+    "index.html": "/Blogwebsite/index.html",
+    "static/media/arrow-right-circle-fill.svg": "/Blogwebsite/static/media/arrow-right-circle-fill.7c2248a40e1809ee0d9b.svg",
+    "static/media/arrow-left-circle-fill.svg": "/Blogwebsite/static/media/arrow-left-circle-fill.effcc43981807b245aae.svg",
+    "main.00f06ca3.css.map": "/Blogwebsite/static/css/main.00f06ca3.css.map",
+    "main.f2c4d468.js.map": "/Blogwebsite/static/js/main.f2c4d468.js.map",
+    "453.ed6b48ab.chunk.js.map": "/Blogwebsite/static/js/453.ed6b48ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.537557c8.css",
-    "static/js/main.16dffcd7.js"
+    "static/css/main.00f06ca3.css",
+    "static/js/main.f2c4d468.js"
   ]
 }
