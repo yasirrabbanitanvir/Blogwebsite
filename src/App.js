@@ -6,7 +6,6 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Sponsor from './pages/Sponsor';
 import Contact from './pages/Contact';
-import Error from './pages/Error';
 import "./App.css"
 
 
@@ -20,7 +19,7 @@ function App() {
         <Route path="/Blog" element={<Blog />}></Route>
         <Route path="/Sponsor" element={<Sponsor />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>
-        <Route path="*" element={ <Error/>}></Route>
+       
     </Routes>
   </BrowserRouter></>
    
