@@ -11,7 +11,7 @@ const Sponsor = () => {
       <section
         className="d-flex align-items-center text-center text-white"
         style={{
-          backgroundImage: "url('./img/Sponsor.jpg')",
+          backgroundImage: "url('/img/Sponsor.jpg')", 
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: '60vh',

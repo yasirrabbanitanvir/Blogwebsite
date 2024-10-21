@@ -11,7 +11,7 @@ const Contact = () => {
       <section
         className="d-flex align-items-center text-center text-white"
         style={{
-          backgroundImage: "url('./img/Contact.jpg')",
+          backgroundImage: "url('/img/Contact.jpg')", // Updated image path
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: '60vh',

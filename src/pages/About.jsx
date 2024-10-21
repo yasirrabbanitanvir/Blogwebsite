@@ -11,7 +11,7 @@ function About() {
       <section
         className="d-flex align-items-center text-center text-white"
         style={{
-          backgroundImage: "url('./img/About page.jpg')",
+          backgroundImage: "url('/img/About page.jpg')", // Adjusted path
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

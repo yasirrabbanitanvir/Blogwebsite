@@ -16,9 +16,9 @@ class Carousel extends Component {
         Ltitle3: "Live with programmer Tanvir"
       },
       Paragraph: {
-        Ptitle1: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor tempora debitis esse adipisci iste repudiandae, dolores necessitatibus quas ab placeat nihil assumenda sapiente deleniti similique nisi magni repellat optio, a molestias velit impedit doloremque nesciunt nobis! Saepe magni in eveniet voluptas expedita provident dolores temporibus adipisci, eligendi, eum velit tempora",
-        Ptitle2: "ipsum dolor sit amet consectetur, adipisicing elit. Dolor tempora debitis esse adipisci iste repudiandae, dolores necessitatibus quas ab placeat nihil assumenda sapiente deleniti similique nisi magni repellat optio, a molestias velit impedit doloremque nesciunt nobis! Saepe magni in eveniet voluptas expedita provident dolores temporibus adipisci, eligendi, eum velit tempora",
-        Ptitle3: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor tempora debitis esse adipisci iste repudiandae, dolores necessitatibus quas ab placeat nihil assumenda sapiente deleniti similique nisi magni repellat optio, a molestias velit impedit doloremque nesciunt nobis! Saepe magni in eveniet voluptas expedita provident dolores temporibus adipisci, eligendi, eum velit tempora"
+        Ptitle1: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor tempora debitis esse adipisci iste repudiandae.",
+        Ptitle2: "ipsum dolor sit amet consectetur, adipisicing elit. Dolor tempora debitis esse adipisci iste repudiandae.",
+        Ptitle3: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor tempora debitis esse adipisci iste repudiandae."
       },
       ChannelName: {
         ChannelName1: "CodeErrors",
@@ -41,7 +41,7 @@ class Carousel extends Component {
             <div className="carousel-item active">
               <div className='row'>
                 <div className='col-md-6'>
-                  <img src="img/ieee 1 (1).jpg" className="d-block w-100" alt="..." />
+                  <img src="/img/ieee 1 (1).jpg" className="d-block w-100" alt="..." /> {/* Adjusted path */}
                 </div>
                 <div className='col-md-6'>
                   <p className='shortTitle'>{this.state.ShortTitle.Stitle1}</p>
@@ -56,7 +56,7 @@ class Carousel extends Component {
             <div className="carousel-item">
               <div className='row'>
                 <div className='col-md-6'>
-                  <img src="img/ieee 1 (1).jpg" className="d-block w-100" alt="..." />
+                  <img src="/img/ieee 1 (2).jpg" className="d-block w-100" alt="..." /> {/* Adjusted path */}
                 </div>
                 <div className='col-md-6'>
                   <p className='shortTitle'>{this.state.ShortTitle.Stitle2}</p>
@@ -71,7 +71,7 @@ class Carousel extends Component {
             <div className="carousel-item">
               <div className='row'>
                 <div className='col-md-6'>
-                  <img src="img/ieee 1 (1).jpg" className="d-block w-100" alt="..." />
+                  <img src="/img/ieee 1 (3).jpg" className="d-block w-100" alt="..." /> {/* Adjusted path */}
                 </div>
                 <div className='col-md-6'>
                   <p className='shortTitle'>{this.state.ShortTitle.Stitle3}</p>
@@ -91,7 +91,6 @@ class Carousel extends Component {
           </button>
           <h3 className='mt-5'>Recent Post</h3>
         </div>
-       
       </div>
     );
   }

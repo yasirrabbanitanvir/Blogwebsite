@@ -7,23 +7,22 @@ const Blog = () => {
     {
       title: 'Exploring the Beauty of Nature',
       excerpt: 'Nature has a way of capturing our hearts and minds. In this post, we explore...',
-      image: './img/Beauty of Nature.jpg',
+      image: '/img/Beauty of Nature.jpg', // Updated image path
     },
     {
       title: 'The Future of Technology',
       excerpt: 'As technology continues to evolve, we must consider its implications...',
-      image: './img/The Future of Technology.jpg',
+      image: '/img/The Future of Technology.jpg', // Updated image path
     },
     {
       title: 'Healthy Living Tips',
       excerpt: 'Living a healthy life is more than just exercise. It’s about mindset and balance...',
-      image: './img/Healthy Living.jpg',
-      
+      image: '/img/Healthy Living.jpg', // Updated image path
     },
     {
       title: 'Travel Destinations You Must Visit',
       excerpt: 'From serene beaches to bustling cities, discover the top travel spots for 2024...',
-      image: './img/Travel Destinations.jpg',
+      image: '/img/Travel Destinations.jpg', // Updated image path
     },
   ];
 
@@ -35,7 +34,7 @@ const Blog = () => {
       <section
         className="d-flex align-items-center text-center text-white"
         style={{
-          backgroundImage: "url('./img/Blog.jpg')",
+          backgroundImage: "url('/img/Blog.jpg')", 
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: '60vh',
