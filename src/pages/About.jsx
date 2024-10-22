@@ -7,11 +7,11 @@ function About() {
     <div>
       <BlogNavbar />
 
-      {/* Hero Section with Background Image */}
+      {/* Hero Section */}
       <section
         className="d-flex align-items-center text-center text-white"
         style={{
-          backgroundImage: "url('/img/About page.jpg')", // Adjusted path
+          backgroundImage: "url('/img/About page.jpg')", 
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

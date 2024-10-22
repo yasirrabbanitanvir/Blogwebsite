@@ -7,11 +7,11 @@ const Contact = () => {
     <div>
       <BlogNavbar />
 
-      {/* Hero Section with Background Image */}
+      {/* Hero Section */}
       <section
         className="d-flex align-items-center text-center text-white"
         style={{
-          backgroundImage: "url('/img/Contact.jpg')", // Updated image path
+          backgroundImage: "url('/img/Contact.jpg')", 
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: '60vh',
@@ -30,13 +30,13 @@ const Contact = () => {
           <p>If you have any questions, comments, or suggestions, feel free to reach out!</p>
           <ul className="list-unstyled">
             <li>
-              <i className="fas fa-phone"></i> +1 234 567 890
+              <i className="fas fa-phone"></i> 017XXXXXXXXX
             </li>
             <li>
-              <i className="fas fa-envelope"></i> email@example.com
+              <i className="fas fa-envelope"></i> contact@myblog.com
             </li>
             <li>
-              <i className="fas fa-map-marker-alt"></i> Your Location
+              <i className="fas fa-map-marker-alt"></i> Dhaka, Bangladesh
             </li>
           </ul>
         </div>

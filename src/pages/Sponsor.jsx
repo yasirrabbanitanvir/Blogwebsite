@@ -7,7 +7,7 @@ const Sponsor = () => {
     <div>
       <BlogNavbar />
 
-      {/* Hero Section with Background Image */}
+      {/* Hero Section */}
       <section
         className="d-flex align-items-center text-center text-white"
         style={{

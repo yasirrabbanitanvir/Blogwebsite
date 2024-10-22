@@ -13,7 +13,7 @@
     color: #555;
   }
   
-  /* Responsive adjustments */
+  /* Making Responsive */
   @media (max-width: 768px) {
     .shortTitle {
       font-size: 0.9rem;
