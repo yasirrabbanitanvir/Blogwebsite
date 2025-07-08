@@ -11,7 +11,7 @@ class Carousel extends Component {
         Stitle3: "Lorem ipsum dolor sit amet."
       },
       LongTitle: {
-        Ltitle1: "Live with programmer yasir",
+        Ltitle1: "Live with programmer Yasir",
         Ltitle2: "Live with programmer Rabbani",
         Ltitle3: "Live with programmer Tanvir"
       },
@@ -35,34 +35,50 @@ class Carousel extends Component {
 
   render() {
     return (
-      <div>
-        <div id="carouselExampleFade" className="carousel slide carousel-fade container mt-5" data-bs-ride="carousel">
+      <div className="container my-5">
+        <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
           <div className="carousel-inner">
             {Object.keys(this.state.ShortTitle).map((key, index) => (
               <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
-                <div className='row'>
-                  <div className='col-md-6 col-12'>
-                    <img src={`/img/ieee 1 (${index + 1}).jpg`} className="d-block w-100" alt={`Slide ${index + 1}`} />
+                <div className="row g-4 align-items-center">
+                  {/* Left Image */}
+                  <div className="col-md-6">
+                    <img
+                      src={`/img/ieee 1 (${index + 1}).jpg`}
+                      className="d-block w-100 rounded"
+                      alt={`Slide ${index + 1}`}
+                      style={{ maxHeight: '350px', objectFit: 'cover' }}
+                    />
                   </div>
-                  <div className='col-md-6 col-12 d-flex flex-column justify-content-center'>
-                    <p className='shortTitle'>{this.state.ShortTitle[key]}</p>
-                    <h3 className='longTitle'>{this.state.LongTitle[`Ltitle${index + 1}`]}</h3>
-                    <p className='shortTitle'>{this.state.Paragraph[`Ptitle${index + 1}`]}</p>
-                    <p className='channelName'>{this.state.ChannelName[`ChannelName${index + 1}`]}</p>
-                    <p className='shortTitle'>{this.state.Date[`date${index + 1}`]}</p>
+
+                  {/* Right Text */}
+                  <div className="col-md-6">
+                    <div className="text-content px-2">
+                      <p className="text-muted small mb-1">{this.state.ShortTitle[key]}</p>
+                      <h3 className="fw-bold">{this.state.LongTitle[`Ltitle${index + 1}`]}</h3>
+                      <p className="text-secondary">{this.state.Paragraph[`Ptitle${index + 1}`]}</p>
+                      <p className="mb-1 fw-semibold">📺 {this.state.ChannelName[`ChannelName${index + 1}`]}</p>
+                      <p className="text-muted small">📅 {this.state.Date[`date${index + 1}`]}</p>
+                    </div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
+
+          {/* Controls */}
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon"></span>
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span className="carousel-control-next-icon"></span>
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
           </button>
-          <h3 className='mt-5'>Recent Post</h3>
         </div>
+
+        {/* Section Title */}
+        <h3 className="mt-5 text-center fw-bold">Recent Posts</h3>
       </div>
     );
   }

@@ -1,30 +1,43 @@
 import React from 'react';
+import { FiSend } from 'react-icons/fi';
 
 function Footer() {
-    return (
-        <> <div className='bg-light p-4'> <div className='container'>
-        <div className='row'>
-          <div className='col-md-8'>
-            <h3>Newsletter Subscriptions</h3>
-            <p className='WidthSmall'>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          </div>
-          <div className='col-md-4'>
-            <div className='input-group mt-5'>
-              <input type="text" className='form-control' placeholder='Enter Your Email'/>
-              <span className='input-group-btn'>
-                <button className='btn btn-primary' type='button'>
-                  <img src="./img/send.svg" alt=""/>
+  return (
+    <>
+      <footer className="bg-light py-5">
+        <div className="container">
+          <div className="row align-items-center">
+            {/* Newsletter Text */}
+            <div className="col-md-8 mb-4 mb-md-0">
+              <h4 className="fw-bold">Newsletter Subscription</h4>
+              <p className="text-muted mb-0">
+                Stay updated! Subscribe to receive the latest articles and news.
+              </p>
+            </div>
+
+            {/* Subscription Form */}
+            <div className="col-md-4">
+              <div className="input-group">
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Enter your email"
+                  aria-label="Email"
+                  required
+                />
+                <button className="btn btn-primary" type="button">
+                  <FiSend />
                 </button>
-              </span>
+              </div>
             </div>
           </div>
         </div>
-        </div></div>
-            <p className='text-center mt-3'>Copyright all Rights Reserved by Yasir</p>
-        
-        </>
-     
-   
+      </footer>
+
+      <div className="text-center py-3 bg-white border-top">
+        <small className="text-muted">© {new Date().getFullYear()} All Rights Reserved by Yasir</small>
+      </div>
+    </>
   );
 }
 
