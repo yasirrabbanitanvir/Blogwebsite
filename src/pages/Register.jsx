@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react';
 import { postData } from '../api';
-import BlogNavbar from './Navbar';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 export default function Register() {
   const [form, setForm] = useState({ username: '', email: '', password: '' });
@@ -20,7 +19,7 @@ export default function Register() {
 
   return (
     <>
-      <BlogNavbar />
+     
       <div className="container mt-5 mb-5">
         <h2>Register</h2>
         <form onSubmit={handleSubmit} className="w-50 mx-auto">
@@ -38,7 +37,12 @@ export default function Register() {
           </div>
           <button type="submit" className="btn btn-primary">Register</button>
         </form>
+
         {message && <p className="mt-3 text-center">{message}</p>}
+
+        <p className="text-center mt-3">
+          Already have an account? <Link to="/login">Go to Login</Link>
+        </p>
       </div>
       <Footer />
     </>

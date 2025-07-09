@@ -5,8 +5,7 @@ function Navbar({ user, onLogout }) {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // Call your logout API and then update app state
-    fetch('http://localhost/path-to-your-php-api-folder/logout.php', {
+    fetch('http://localhost/blog-api/logout.php', {
       credentials: 'include',
     })
       .then(res => res.json())
@@ -17,7 +16,6 @@ function Navbar({ user, onLogout }) {
         }
       })
       .catch(() => {
-        // handle error
         onLogout();
         navigate('/login');
       });
@@ -59,36 +57,28 @@ function Navbar({ user, onLogout }) {
             </li>
 
             {!user ? (
-              <>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/login">Login</NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/register">Register</NavLink>
-                </li>
-              </>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/login">Login</NavLink>
+              </li>
             ) : (
-              <>
-                <li className="nav-item dropdown">
-                  <a
-                    href="#!"
-                    className="nav-link dropdown-toggle"
-                    id="userDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    {user.username}
-                  </a>
-                  <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                    <li>
-                      <button className="dropdown-item" onClick={handleLogout}>
-                        Logout
-                      </button>
-                    </li>
-                  </ul>
-                </li>
-              </>
+              <li className="nav-item dropdown">
+                <button
+                  type="button"
+                  className="nav-link dropdown-toggle btn btn-link text-white text-decoration-none"
+                  id="userDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  {user.username}
+                </button>
+                <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                  <li>
+                    <button className="dropdown-item" onClick={handleLogout}>
+                      Logout
+                    </button>
+                  </li>
+                </ul>
+              </li>
             )}
           </ul>
         </div>

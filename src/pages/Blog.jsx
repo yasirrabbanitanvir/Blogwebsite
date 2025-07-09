@@ -1,5 +1,4 @@
 import React from 'react';
-import BlogNavbar from './Navbar';
 import Footer from './Footer';
 
 const Blog = () => {
@@ -28,7 +27,7 @@ const Blog = () => {
 
   return (
     <div>
-      <BlogNavbar />
+    
 
       {/* Hero Section */}
       <section

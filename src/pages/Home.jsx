@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from './Card';
 import Carousel from './Carousel';
-import Navbar from './Navbar';
 import Page from './Page';
 import Footer from './Footer';
 
@@ -41,7 +40,7 @@ function Home() {
 
   return (
     <>
-      <Navbar />
+   
 
       <div className="container mt-4">
         <Carousel />

@@ -1,12 +1,11 @@
 import React from 'react';
-import BlogNavbar from './Navbar';
 import Footer from './Footer';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Contact = () => {
   return (
     <div>
-      <BlogNavbar />
+      
 
       {/* Hero Section */}
       <section

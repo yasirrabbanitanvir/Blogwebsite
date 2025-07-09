@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Logout from './pages/Logout';
+import Navbar from './pages/Navbar'; 
 
 function App() {
   const [user, setUser] = useState(null);
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <Router>
+      <Navbar user={user} onLogout={handleLogout} /> {}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

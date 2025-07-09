@@ -1,12 +1,10 @@
 import React from 'react';
-import BlogNavbar from './Navbar';
 import Footer from './Footer';
 import { FaEnvelope, FaPhone, FaFacebookF, FaTwitter } from 'react-icons/fa';
 
 function About() {
   return (
     <div>
-      <BlogNavbar />
 
       {/* Hero Section */}
       <section

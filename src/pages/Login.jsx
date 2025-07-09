@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react';
 import { postData } from '../api';
-import BlogNavbar from './Navbar';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 export default function Login({ onLoginSuccess }) {
   const [form, setForm] = useState({ email: '', password: '' });
@@ -23,7 +22,7 @@ export default function Login({ onLoginSuccess }) {
 
   return (
     <>
-      <BlogNavbar />
+      
       <div className="container mt-5 mb-5">
         <h2>Login</h2>
         <form onSubmit={handleSubmit} className="w-50 mx-auto">
@@ -37,7 +36,12 @@ export default function Login({ onLoginSuccess }) {
           </div>
           <button type="submit" className="btn btn-primary">Login</button>
         </form>
+
         {message && <p className="mt-3 text-center">{message}</p>}
+
+        <p className="text-center mt-3">
+          Don't have an account? <Link to="/register">Register here</Link>
+        </p>
       </div>
       <Footer />
     </>

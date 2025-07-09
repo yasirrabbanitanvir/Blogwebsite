@@ -1,12 +1,11 @@
 import React from 'react';
-import BlogNavbar from './Navbar';
 import Footer from './Footer';
 import { BsCheckCircleFill } from 'react-icons/bs';
 
 const Sponsor = () => {
   return (
     <div>
-      <BlogNavbar />
+    
 
       {/* Hero Section */}
       <section
