@@ -44,7 +44,7 @@ class Carousel extends Component {
                   {/* Left Image */}
                   <div className="col-md-6">
                     <img
-                      src={`/img/ieee-${index + 1}.jpg`}
+                      src={`./img/ieee-${index + 1}.jpg`}
                       className="d-block w-100 rounded"
                       alt={`Slide ${index + 1}`}
                       style={{ maxHeight: '350px', objectFit: 'cover' }}
