@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 import './BlogCSS/Blog.css';
 
+
+
+const images = [
+  '/img/ieee-1.jpg',
+  '/img/ieee-2.jpg',
+  '/img/ieee-3.jpg'
+];
+  
+
 class Carousel extends Component {
   constructor(props) {
     super(props);
@@ -44,7 +53,7 @@ class Carousel extends Component {
                   {/* Left Image */}
                   <div className="col-md-6">
                     <img
-                      src={`./img/ieee-${index + 1}.jpg`}
+                      src={images[index]} 
                       className="d-block w-100 rounded"
                       alt={`Slide ${index + 1}`}
                       style={{ maxHeight: '350px', objectFit: 'cover' }}
